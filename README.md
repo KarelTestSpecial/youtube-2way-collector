@@ -94,12 +94,14 @@ Open het bestand manifest.json in de codemap.
 Zoek het oauth2-object. Vervang de bestaande client_id door de Client-ID die je in Stap 2.10 hebt gekopieerd.
 
 // in manifest.json
+
 "oauth2": {
     "client_id": "HIER-JOUW-EIGEN-CLIENT-ID-PLAKKEN.apps.googleusercontent.com",
     "scopes": [
       // ... scopes blijven hetzelfde
     ]
 }
+
 Sla het manifest.json-bestand op.
 
 Stap 6: Herlaad en Gebruik
