@@ -1,0 +1,190 @@
+{
+  "appDesc": {
+    "message": "Verzamel en bewerk video's van YouTube-playlists via een Google Sheet."
+  },
+  "appName": {
+    "message": "YouTube Playlist 2-Way Collector"
+  },
+  "columnLink": {
+    "message": "Link"
+  },
+  "columnTitle": {
+    "message": "Titel"
+  },
+  "columnVideoId": {
+    "message": "Video-ID (optioneel)"
+  },
+  "errorGetToken": {
+    "message": "Kon geen nieuwe token verkrijgen."
+  },
+  "errorNoPlaylistsFound": {
+    "message": "Geen playlists gevonden op je YouTube-account."
+  },
+  "errorPlaylistNotFound": {
+    "message": "Playlist met ID '$PLAYLIST_ID$' niet gevonden.",
+    "placeholders": {
+      "playlist_id": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorProcessingPlaylist": {
+    "message": "Fout bij verwerken van playlist ID $PLAYLIST_ID$: $ERROR_MSG$",
+    "placeholders": {
+      "playlist_id": {
+        "content": "$1"
+      },
+      "error_msg": {
+        "content": "$2"
+      }
+    }
+  },
+  "errorSpreadsheetNotFound": {
+    "message": "De Google Sheet 'Mijn YouTube Playlist Collectie' is niet gevonden. Draai eerst 'Verwerk Playlists' om de sheet aan te maken."
+  },
+  "logItemAdded": {
+    "message": "  [+] Video toegevoegd: $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "logItemRemoved": {
+    "message": "  [-] Video verwijderd: $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "logPlaylistCreated": {
+    "message": "Nieuwe playlist aangemaakt: '$TITLE$'",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "logPlaylistUpdated": {
+    "message": "Playlist bijgewerkt: '$TITLE$'",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "logUnchanged": {
+    "message": "  (geen wijzigingen)"
+  },
+  "manualButtonTitle": {
+    "message": "Toon handleiding"
+  },
+  "manualContent": {
+    "message": "<p><strong>Hoe werkt het?</strong><br>Deze extensie heeft twee hoofdfuncties:</p><ol><li><strong>Verwerk Playlists:</strong> Haalt je YouTube-playlists op en slaat ze op in een Google Sheet. Plak in het tekstvak één of meerdere YouTube-playlistlinks (of alleen de ID's) onder elkaar. Laat het veld leeg om <strong>al</strong> je playlists op te halen.</li><li><strong>Upload naar YouTube:</strong> Leest de Google Sheet en past je YouTube-playlists aan. Nieuwe tabbladen worden nieuwe playlists. Verwijderde rijen worden verwijderde video's. Nieuwe rijen worden nieuwe video's.</li></ol><p><strong>Belangrijke opmerkingen:</strong></p><ul><li><strong>'Liked Videos':</strong> Deze speciale playlist kan niet via deze tool worden gewijzigd. Het tabblad 'Liked Videos' wordt daarom overgeslagen tijdens het uploaden.</li><li><strong>Volgorde:</strong> Het veranderen van de volgorde van video's in de Sheet wordt momenteel <strong>niet</strong> gesynchroniseerd naar YouTube. Nieuwe video's worden altijd achteraan de playlist toegevoegd.</li><li><strong>Eigen Sheets:</strong> De extensie werkt uitsluitend met de Google Sheet die met de knop 'Verwerk Playlists' is aangemaakt. Dit is een ingebouwde veiligheidsmaatregel van Google om uw andere bestanden te beschermen. <strong>Praktisch gevolg:</strong> Als u de Sheet hernoemt, verwijdert, of een kopie maakt, zal de 'Upload naar YouTube'-knop niet meer werken omdat de extensie het juiste bestand dan niet meer kan vinden.</li></ul>"
+  },
+  "noteSpecialPlaylists": {
+    "message": "Noot: Speciale playlists (zoals 'Gelikete video's') konden niet worden opgehaald."
+  },
+  "noteWatchLater": {
+    "message": "Noot: YouTube staat toegang tot 'Later Bekijken' niet toe."
+  },
+  "openSheetLink": {
+    "message": "\nOpen Google Sheet"
+  },
+  "popupExplanation": {
+    "message": "Plak één YouTube-playlistlink (of ID) per regel."
+  },
+  "popupTitle": {
+    "message": "YouTube Playlist Collector"
+  },
+  "processButton": {
+    "message": "Verwerk Playlists"
+  },
+  "spreadsheetName": {
+    "message": "Mijn YouTube Playlist Collectie"
+  },
+  "statusAuthSuccess": {
+    "message": "Authenticatie succesvol."
+  },
+  "statusDone": {
+    "message": "Klaar!\n\n$RESULT$",
+    "placeholders": {
+      "result": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusError": {
+    "message": "Fout: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusProcessingInput": {
+    "message": "\nIngevulde playlists worden verwerkt..."
+  },
+  "statusProcessingPlaylist": {
+    "message": "Bezig met verwerken van playlist '$TITLE$'...",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusResettingAuth": {
+    "message": "Authenticatie resetten en starten..."
+  },
+  "statusSearchingAll": {
+    "message": "\nAl je playlists worden nu gezocht..."
+  },
+  "statusStartingUpload": {
+    "message": "\nUpload naar YouTube gestart..."
+  },
+  "statusSyncing": {
+    "message": "Synchroniseren van '$TITLE$'.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "successProcessPlaylist": {
+    "message": "Succesvol $COUNT$ video's verwerkt voor playlist '$TITLE$'.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "title": {
+        "content": "$2"
+      }
+    }
+  },
+  "summaryComplete": {
+    "message": "Alle taken voltooid. Resultaten:\n$RESULTS$",
+    "placeholders": {
+      "results": {
+        "content": "$1"
+      }
+    }
+  },
+  "summaryUploadComplete": {
+    "message": "Upload voltooid. Overzicht:\n$RESULTS$",
+    "placeholders": {
+      "results": {
+        "content": "$1"
+      }
+    }
+  },
+  "textareaPlaceholder": {
+    "message": "Laat leeg om ALLE playlists te verwerken..."
+  },
+  "uploadButton": {
+    "message": "Upload naar YouTube"
+  },
+  "warningSkippedLikes": {
+    "message": "Info: Het tabblad 'Liked Videos' wordt overgeslagen. Deze playlist kan niet via de API worden beheerd."
+  }
+}
