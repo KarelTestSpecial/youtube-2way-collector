@@ -91,7 +91,6 @@ Klik op Opslaan.
 Stap 5: Configureer het Manifest-bestand
 
 Open het bestand manifest.json in de codemap.
-
 Zoek het oauth2-object. Vervang de bestaande client_id door de Client-ID die je in Stap 2.10 hebt gekopieerd.
 
 // in manifest.json
