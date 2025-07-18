@@ -54,8 +54,9 @@ Daarom is de versie in de Chrome Web Store niet meer beschikbaar. In plaats daar
 -----
 
 Installatie- en Configuratiegids
+
 Stap 1: Download de Code
-Kloon deze repository of download de code als een ZIP-bestand en pak het uit op je computer. git clone https://github.com/KarelTestSpecial/YouTube-Playlist-Collector.git
+Kloon deze repository of download de code als een ZIP-bestand en pak het uit op je computer.
 
 Stap 2: Creëer je Eigen Google Cloud Project
 Je hebt je eigen API-sleutels nodig.
@@ -95,8 +96,8 @@ Zoek het oauth2-object. Vervang de bestaande client_id door de Client-ID die je 
 
 // in manifest.json
 
-"oauth2": {
-    "client_id": "HIER-JOUW-EIGEN-CLIENT-ID-PLAKKEN.apps.googleusercontent.com",
+"oauth2": { 
+    "client_id": "HIER-JOUW-EIGEN-CLIENT-ID-PLAKKEN.apps.googleusercontent.com", 
     "scopes": [
       // ... scopes blijven hetzelfde
     ]
@@ -106,4 +107,4 @@ Sla het manifest.json-bestand op.
 
 Stap 6: Herlaad en Gebruik
 
-Ga terug naar de chrome://extensions pagina. Klik op het herlaad-icoontje (de cirkelvormige pijl) op de kaart van je "YouTube Playlist Collector" extensie. Dit is een essentiële stap om de wijzigingen in manifest.json te laden. Klik op het extensie-icoon in je werkbalk om te beginnen. De eerste keer zal Google je vragen om in te loggen en toestemming te geven.
+Ga terug naar de chrome://extensions pagina. Klik op het herlaad-icoontje (de cirkelvormige pijl) op de kaart van je "YouTube 2way Collector" extensie. Dit is een essentiële stap om de wijzigingen in manifest.json te laden. Klik op het extensie-icoon in je werkbalk om te beginnen. De eerste keer zal Google je vragen om in te loggen en toestemming te geven.
