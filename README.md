@@ -107,4 +107,4 @@ Sla het manifest.json-bestand op.
 
 Stap 6: Herlaad en Gebruik
 
-Ga terug naar de chrome://extensions pagina. Klik op het herlaad-icoontje (de cirkelvormige pijl) op de kaart van je "YouTube 2way Collector" extensie. Dit is een essentiële stap om de wijzigingen in manifest.json te laden. Klik op het extensie-icoon in je werkbalk om te beginnen. De eerste keer zal Google je vragen om in te loggen en toestemming te geven.
+Ga terug naar de chrome://extensions pagina. Klik op het herlaad-icoontje (de cirkelvormige pijl) op de kaart van je "YouTube 2way Playlist Collector" extensie. Dit is een essentiële stap om de wijzigingen in manifest.json te laden. Klik op het extensie-icoon in je werkbalk om te beginnen. De eerste keer zal Google je vragen om in te loggen en toestemming te geven.
