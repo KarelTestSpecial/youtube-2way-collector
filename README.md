@@ -73,17 +73,23 @@ Kies als toepassingstype Chrome-app.
 Geef het een naam, bv. "Chrome Extensie Client".
 Laat het veld "Toepassings-ID" voor nu leeg en klik op Maken.
 Je krijgt nu een Client-ID. Kopieer deze, die hebben we later nodig.
+
 Stap 3: Laad de Extensie Lokaal in Chrome
+
 Open Chrome en navigeer naar chrome://extensions.
 Activeer rechtsboven de Ontwikkelaarsmodus (Developer mode).
 Klik op de knop Uitgepakte extensie laden (Load unpacked).
 Selecteer de map waarin je de code hebt gedownload.
 De extensie verschijnt nu in je lijst. Zoek de ID van de extensie (een lange reeks letters, bv: abcdefghijklmnopabcdefghijklmnop). Kopieer deze ID.
+
 Stap 4: Koppel de Extensie aan je Google Project
+
 Ga terug naar de Google Cloud Console, naar de Client-ID die je in Stap 2 hebt gemaakt. Klik erop om deze te bewerken.
 Plak de Extensie-ID die je zojuist hebt gekopieerd in het veld Toepassings-ID.
 Klik op Opslaan.
+
 Stap 5: Configureer het Manifest-bestand
+
 Open het bestand manifest.json in de codemap.
 
 Zoek het oauth2-object. Vervang de bestaande client_id door de Client-ID die je in Stap 2.10 hebt gekopieerd.
@@ -98,4 +104,5 @@ Zoek het oauth2-object. Vervang de bestaande client_id door de Client-ID die je 
 Sla het manifest.json-bestand op.
 
 Stap 6: Herlaad en Gebruik
+
 Ga terug naar de chrome://extensions pagina. Klik op het herlaad-icoontje (de cirkelvormige pijl) op de kaart van je "YouTube Playlist Collector" extensie. Dit is een essentiële stap om de wijzigingen in manifest.json te laden. Klik op het extensie-icoon in je werkbalk om te beginnen. De eerste keer zal Google je vragen om in te loggen en toestemming te geven.
