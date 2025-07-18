@@ -51,6 +51,8 @@ Vanwege de aangescherpte verificatie-eisen van Google is het voor deze extensie 
 
 Daarom is de versie in de Chrome Web Store niet meer beschikbaar. In plaats daarvan is er deze GitHub-pagina.
 
+-----
+
 Installatie- en Configuratiegids
 Stap 1: Download de Code
 Kloon deze repository of download de code als een ZIP-bestand en pak het uit op je computer. git clone https://github.com/KarelTestSpecial/YouTube-Playlist-Collector.git
