@@ -44,7 +44,7 @@ Karel.Test.Special
 
 -----
 
-Belangrijke Mededeling
+Belangrijke Mededeling: 
 Deze repository bevat de volledig werkende code en stelt je in staat de extensie lokaal te draaien met je eigen Google API-credentials. Volg de onderstaande stappen zorgvuldig.
 
 Vanwege de aangescherpte verificatie-eisen van Google is het voor deze extensie niet mogelijk om het officiële OAuth-verificatieproces te doorlopen zonder een eigen, betaalde domeinnaam te registreren.
