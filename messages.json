@@ -1,0 +1,128 @@
+{
+  "appName": {
+    "message": "YouTube Playlist 2-Way Collector"
+  },
+  "appDesc": {
+    "message": "Collect and edit videos from YouTube playlists using a Google Sheet."
+  },
+  "popupTitle": {
+    "message": "YouTube Playlist 2-Way Collector"
+  },
+  "spreadsheetName": {
+    "message": "YouTube 2-Way Playlists"
+  },
+  "errorSpreadsheetNotFound": {
+    "message": "The Google Sheet 'YouTube 2-Way Playlists' was not found. Please run 'Process Playlists' first to create it."
+  },
+  "columnTitle": {
+    "message": "Title"
+  },
+  "columnLink": {
+    "message": "Link"
+  },
+  "columnVideoId": {
+    "message": "Video ID (for sync)"
+  },
+  "processButton": {
+    "message": "Process Playlists"
+  },
+  "uploadButton": {
+    "message": "Upload to YouTube"
+  },
+  "popupExplanation": {
+    "message": "Paste one YouTube playlist link (or ID) per line."
+  },
+  "textareaPlaceholder": {
+    "message": "Leave empty to process ALL playlists..."
+  },
+  "manualButtonTitle": {
+    "message": "Show manual"
+  },
+  "manualContent": {
+    "message": "<p><strong>How does it work?</strong><br>This extension has two main functions:</p><ol><li><strong>Process Playlists:</strong> Fetches your YouTube playlists and saves them to a Google Sheet named 'YouTube 2-Way Playlists'. In the text area, paste one or more YouTube playlist links (or just the IDs), one per line. Leave the field empty to fetch <strong>all</strong> of your playlists.</li><li><strong>Upload to YouTube:</strong> Reads the Google Sheet and modifies your YouTube playlists. New tabs will become new playlists. Deleted rows will become deleted videos. New rows will become new videos.</li></ol><p><strong>Important notes:</strong></p><ul><li><strong>'Liked Videos':</strong> This special playlist cannot be modified through this tool. The 'Liked Videos' tab will therefore be skipped during the upload.</li><li><strong>Order:</strong> Changing the order of videos in the Sheet is currently <strong>not</strong> synchronized to YouTube. New videos are always added to the end of the playlist.</li><li><strong>Own Sheets:</strong> The extension works exclusively with the Google Sheet that was created by this tool. If you rename, delete, or make a copy of the Sheet, the 'Upload to YouTube' button will no longer work.</li></ul>"
+  },
+  "openSheetLink": {
+    "message": "\nOpen Google Sheet"
+  },
+  "statusResettingAuth": {
+    "message": "Resetting authentication and starting..."
+  },
+  "statusAuthSuccess": {
+    "message": "Authentication successful."
+  },
+  "statusSearchingAll": {
+    "message": "\nSearching for all your playlists..."
+  },
+  "statusProcessingInput": {
+    "message": "\nProcessing submitted playlists..."
+  },
+  "statusStartingUpload": {
+    "message": "\nStarting upload to YouTube..."
+  },
+  "statusSyncing": {
+    "message": "Synchronizing '$TITLE$'.",
+    "placeholders": { "title": { "content": "$1" } }
+  },
+  "statusProcessingPlaylist": {
+    "message": "Processing playlist '$TITLE$'...",
+    "placeholders": { "title": { "content": "$1" } }
+  },
+  "statusError": {
+    "message": "Error: $ERROR$",
+    "placeholders": { "error": { "content": "$1" } }
+  },
+  "errorGetToken": {
+    "message": "Could not get a new token. Check browser console for details."
+  },
+  "errorNoPlaylistsFound": {
+    "message": "No playlists found on your YouTube account."
+  },
+  "errorPlaylistNotFound": {
+    "message": "Playlist with ID '$PLAYLIST_ID$' not found.",
+    "placeholders": { "playlist_id": { "content": "$1" } }
+  },
+  "errorProcessingPlaylist": {
+    "message": "Error processing playlist ID $PLAYLIST_ID$: $ERROR_MSG$",
+    "placeholders": { "playlist_id": { "content": "$1" }, "error_msg": { "content": "$2" } }
+  },
+  "successProcessPlaylist": {
+    "message": "Successfully processed $COUNT$ videos for playlist '$TITLE$'.",
+    "placeholders": { "count": { "content": "$1" }, "title": { "content": "$2" } }
+  },
+  "summaryComplete": {
+    "message": "All tasks completed. Results:\n$RESULTS$",
+    "placeholders": { "results": { "content": "$1" } }
+  },
+  "summaryUploadComplete": {
+    "message": "Upload complete. Summary:\n$RESULTS$",
+    "placeholders": { "results": { "content": "$1" } }
+  },
+  "noteWatchLater": {
+    "message": "Note: YouTube does not allow access to 'Watch Later'."
+  },
+  "noteSpecialPlaylists": {
+    "message": "Note: Special playlists (like 'Liked videos') could not be retrieved."
+  },
+  "warningSkippedLikes": {
+    "message": "Info: The 'Liked Videos' tab will be skipped. This playlist cannot be managed via the API."
+  },
+  "logPlaylistCreated": {
+    "message": "New playlist created: '$TITLE$'",
+    "placeholders": { "title": { "content": "$1" } }
+  },
+  "logPlaylistUpdated": {
+    "message": "Playlist updated: '$TITLE$'",
+    "placeholders": { "title": { "content": "$1" } }
+  },
+  "logItemAdded": {
+    "message": "  [+] Video added: $TITLE$",
+    "placeholders": { "title": { "content": "$1" } }
+  },
+  "logItemRemoved": {
+    "message": "  [-] Video removed: $TITLE$",
+    "placeholders": { "title": { "content": "$1" } }
+  },
+  "logUnchanged": {
+    "message": "  (no changes)"
+  }
+}

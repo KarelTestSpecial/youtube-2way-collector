@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Playlist Collector</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: sans-serif; width: 350px; padding: 5px; }
+        .title-container { display: flex; justify-content: space-between; align-items: center; }
+        .manual-button {
+            cursor: pointer;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+        }
+        #manual_content {
+            border: 1px solid #ddd;
+            padding: 0 10px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px; /* Ruimte tussen de knoppen */
+            margin-top: 10px;
+        }
+        textarea { width: 98%; height: 100px; margin-bottom: 10px; }
+        button { width: 100%; padding: 8px; }
+        #status { 
+            margin-top:10px; 
+            white-space: pre-wrap;
+            overflow-x: auto;
+            padding: 9px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h3 id="popupTitle"></h3>
+        <a href="#" id="manual_button" class="manual-button">?</a>
+    </div>
+
+    <div id="manual_content" style="display: none;"></div>
+    
+    <p id="popupExplanation" class="explanation"></p>
+    
+    <textarea id="playlist_ids"></textarea>
+    
+    <div class="button-container">
+        <button id="process_button"></button>
+        <button id="upload_button"></button>
+    </div>
+    
+    <div id="status"></div>
+    <script src="popup.js" type="module"></script>
+</body>
+</html>
